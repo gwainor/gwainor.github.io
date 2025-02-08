@@ -1,6 +1,9 @@
 body {
   color: #222;
-  font-family: sans-serif;
+  font-family: "Monserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
   line-height: 1.5;
   margin: 1rem;
   max-width: 768px;
