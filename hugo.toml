@@ -1,4 +1,4 @@
 baseURL = 'https://gokhan.tr/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Gokhan Ozturk'
 theme = 'portfolio'
