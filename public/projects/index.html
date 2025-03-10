@@ -6,7 +6,7 @@
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<title>Posts | Gokhan Ozturk</title>
+<title>Projects | Gokhan Ozturk</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Sigmar&display=swap" rel="stylesheet">
@@ -54,7 +54,7 @@
       </a>
     </li>
     <li>
-      <a href="/projects/"class="block group relative font-light text-4xl opacity-70 hover:opacity-100 transition-all duration-300 text-background aria-[current=page]:text-accent"
+      <a aria-current="page" href="/projects/"class="block group relative font-light text-4xl opacity-70 hover:opacity-100 transition-all duration-300 text-background aria-[current=page]:text-accent"
       >
         Projects
       </a>
@@ -115,21 +115,57 @@
   </header>
 
         
-  <h1>Posts</h1>
-  <p>Tempor est exercitation ad qui pariatur quis adipisicing aliquip nisi ea consequat ipsum occaecat. Nostrud consequat ullamco laboris fugiat esse esse adipisicing velit laborum ipsum incididunt ut enim. Dolor pariatur nulla quis fugiat dolore excepteur. Aliquip ad quis aliqua enim do consequat.</p>
+<div class="container mx-auto flex h-20 items-center gap-4">
+  <h1 class="ml-40 text-4xl font-bold text-nowrap">Projects</h1>
+  <div
+    class="from-accent mt-2 h-0.5 w-full bg-gradient-to-r to-transparent"
+  ></div>
+</div>
 
-  
-    <h2><a href="/posts/post-3/">Post 3</a></h2>
-    <p>Occaecat aliqua consequat laborum ut ex aute aliqua culpa quis irure esse magna dolore quis. Proident fugiat labore eu laboris officia Lorem enim. Ipsum occaecat cillum ut tempor id sint aliqua incididunt nisi incididunt reprehenderit. Voluptate ad minim sint est aute aliquip esse occaecat tempor officia qui sunt. Aute ex ipsum id ut in est velit est laborum incididunt. Aliqua qui id do esse sunt eiusmod id deserunt eu nostrud aute sit ipsum. Deserunt esse cillum Lorem non magna adipisicing mollit amet consequat.</p>
-  
-    <h2><a href="/posts/post-2/">Post 2</a></h2>
-    <p>Anim eiusmod irure incididunt sint cupidatat. Incididunt irure irure irure nisi ipsum do ut quis fugiat consectetur proident cupidatat incididunt cillum. Dolore voluptate occaecat qui mollit laborum ullamco et. Ipsum laboris officia anim laboris culpa eiusmod ex magna ex cupidatat anim ipsum aute. Mollit aliquip occaecat qui sunt velit ut cupidatat reprehenderit enim sunt laborum. Velit veniam in officia nulla adipisicing ut duis officia.</p>
-<p>Exercitation voluptate irure in irure tempor mollit Lorem nostrud ad officia. Velit id fugiat occaecat do tempor. Sit officia Lorem aliquip eu deserunt consectetur. Aute proident deserunt in nulla aliquip dolore ipsum Lorem ut cupidatat consectetur sit sint laborum. Esse cupidatat sit sint sunt tempor exercitation deserunt. Labore dolor duis laborum est do nisi ut veniam dolor et nostrud nostrud.</p>
-  
-    <h2><a href="/posts/post-1/">Post 1</a></h2>
-    <p>Tempor proident minim aliquip reprehenderit dolor et ad anim Lorem duis sint eiusmod. Labore ut ea duis dolor. Incididunt consectetur proident qui occaecat incididunt do nisi Lorem. Tempor do laborum elit laboris excepteur eiusmod do. Eiusmod nisi excepteur ut amet pariatur adipisicing Lorem.</p>
-<p>Occaecat nulla excepteur dolore excepteur duis eiusmod ullamco officia anim in voluptate ea occaecat officia. Cillum sint esse velit ea officia minim fugiat. Elit ea esse id aliquip pariatur cupidatat id duis minim incididunt ea ea. Anim ut duis sunt nisi. Culpa cillum sit voluptate voluptate eiusmod dolor. Enim nisi Lorem ipsum irure est excepteur voluptate eu in enim nisi. Nostrud ipsum Lorem anim sint labore consequat do.</p>
-  
+<div class="container mx-auto mt-4">
+  <div class="grid grid-cols-3 gap-12">
+    <div class="border-r border-accent">
+      <p class="text-lg indent-8">
+        Here are some of the projects I've either worked on or am working on.
+        The more can be found on my <a href="https://github.com/gwainor" class="underline text-accent" target="_blank" rel="noopener noreferrer">GitHub</a>.
+      </p>
+    </div>
+    <div class="col-span-2">
+      <article class="flex gap-6">
+        <section class="">
+          <div class="flex-center bg-foreground text-background rounded-full w-32 h-32">
+            <i class="fa-brands fa-python text-7xl"></i>
+          </div>
+        </section>
+        <section class="col-span-3">
+          <h2 class="text-2xl font-semibold mb-4">
+            ArcStack Django API
+          </h2>
+          <p class="text-gray-600">
+            There are a lot of API frameworks for Django out there. But all of them
+            have some learning curve and some unorthodox design choices. The ArcStack
+            API is a simple, opinionated API framework for Django. It's designed to
+            be work with Class-Based views of Django and built-in URLs system.
+          </p>
+          <div class="flex gap-4 mt-4">
+            <a href="https://gwainor.github.io/arcstack-django-api/" class="flex-center gap-2 bg-foreground text-background rounded-lg px-2 py-0.5">
+              <i class="fa-solid fa-book"></i>
+              <span>Documentation</span>
+            </a>
+            <a href="https://github.com/gwainor/arcstack-django-api" class="flex-center gap-2 bg-foreground text-background rounded-lg px-2 py-0.5">
+              <i class="fa-brands fa-github"></i>
+              <span>GitHub</span>
+            </a>
+            <a href="https://pypi.org/project/arcstack-django-api/" class="flex-center gap-2 bg-foreground text-background rounded-lg px-2 py-0.5">
+              <i class="fa-solid fa-square-up-right"></i>
+              <span>PyPI</span>
+            </a>
+          </div>
+        </section>
+      </article>
+    </div>
+  </div>
+</div>
 
       </main>
       <footer class="bg-background text-foreground py-10">

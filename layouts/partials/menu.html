@@ -11,11 +11,22 @@ Renders a menu for the given menu ID.
 {{- $menuID := .menuID }}
 
 {{- with index site.Menus $menuID }}
-  <nav>
-    <ul>
-      {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
-    </ul>
-  </nav>
+  <header class="absolute top-0 right-0 group">
+    <a href="#" class="z-50 absolute top-4 right-4 menu-button">
+      <span></span>
+      <span></span>
+      <span></span>
+      <div class="clear-both"></div>
+    </a>
+    <nav class="menu">
+      <ul class="flex flex-col w-72 h-auto p-4 gap-4">
+        {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
+      </ul>
+      <div class="ml-4 mt-4">
+        {{ partial "social_links.html" (dict "inverted" true) }}
+      </div>
+    </nav>
+  </header>
 {{- end }}
 
 {{- define "partials/inline/menu/walk.html" }}
@@ -23,9 +34,7 @@ Renders a menu for the given menu ID.
   {{- range .menuEntries }}
     {{- $attrs := dict "href" .URL }}
     {{- if $page.IsMenuCurrent .Menu . }}
-      {{- $attrs = merge $attrs (dict "class" "active" "aria-current" "page") }}
-    {{- else if $page.HasMenuCurrent .Menu .}}
-      {{- $attrs = merge $attrs (dict "class" "ancestor" "aria-current" "true") }}
+      {{- $attrs = merge $attrs (dict "aria-current" "page") }}
     {{- end }}
     {{- $name := .Name }}
     {{- with .Identifier }}
@@ -40,12 +49,10 @@ Renders a menu for the given menu ID.
             {{- printf " %s=%q" $k $v | safeHTMLAttr }}
           {{- end }}
         {{- end -}}
-      >{{ $name }}</a>
-      {{- with .Children }}
-        <ul>
-          {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
-        </ul>
-      {{- end }}
+        class="block group relative font-light text-4xl opacity-70 hover:opacity-100 transition-all duration-300 text-background aria-[current=page]:text-accent"
+      >
+        {{ $name }}
+      </a>
     </li>
   {{- end }}
 {{- end }}

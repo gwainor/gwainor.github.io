@@ -2,22 +2,51 @@ baseURL = 'https://gokhan.tr/'
 languageCode = 'en-US'
 title = 'Gokhan Ozturk'
 
-[[menus.main]]
-name = 'Home'
-pageRef = '/'
-weight = 10
+[menus]
+  [[menus.main]]
+    name = 'Home'
+    pageRef = '/'
+    weight = 10
 
-[[menus.main]]
-name = 'Posts'
-pageRef = '/posts'
-weight = 20
+  [[menus.main]]
+    name = 'About me'
+    pageRef = '/about'
+    weight = 20
 
-[[menus.main]]
-name = 'Tags'
-pageRef = '/tags'
-weight = 30
+  [[menus.main]]
+    name = 'Projects'
+    pageRef = '/projects'
+    weight = 20
+
+  [[menus.main]]
+    name = 'Contact me'
+    pageRef = '/contact'
+    weight = 30
+
+  [[menus.social]]
+    name = 'GitHub'
+    pre = '<i class="fa-brands fa-github"></i>'
+    url = 'https://github.com/gwainor'
+    weight = 10
+    [menus.social.params]
+      rel = 'external'
+
+  [[menus.social]]
+    name = 'LinkedIn'
+    pre = '<i class="fa-brands fa-linkedin"></i>'
+    url = 'https://www.linkedin.com/in/gwainor/'
+    weight = 20
+    [menus.social.params]
+      rel = 'external'
 
 [build]
+  noJSConfigInAssets = true
+  [[build.cachebusters]]
+    source = 'assets/.*\.(js|ts|jsx|tsx)'
+    target = 'js'
   [[build.cachebusters]]
     source = 'layouts/.*'
+    target = 'css'
+  [[build.cachebusters]]
+    source = 'assets/js/.*'
     target = 'css'

@@ -1,0 +1,37 @@
+{{- $inverted := .inverted }}
+{{- with index site.Menus "social" }}
+<nav>
+  <ul class="flex items-center gap-4">
+    {{- range . }}
+    <li>
+      <a
+        href="{{ .URL }}"
+        target="_blank"
+        rel="external"
+        {{ if $inverted }}
+          class="social-link inverted"
+        {{ else }}
+          class="social-link"
+        {{ end }}
+      >
+        <div></div>
+        <div>{{- .Pre }}</div>
+      </a>
+    </li>
+    {{- end }}
+    <li>
+      <a
+        href="mailto:me@gokhan.tr"
+        {{ if $inverted }}
+          class="text-background"
+        {{ else }}
+          class="text-foreground"
+        {{ end }}
+      >
+        <div></div>
+        <div>me@gokhan.tr</div>
+      </a>
+    </li>
+  </ul>
+</nav>
+{{- end }}

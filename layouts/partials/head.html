@@ -2,5 +2,6 @@
 <meta name="viewport" content="width=device-width">
 <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
 {{ partialCached "google-fonts" . }}
+<script src="https://kit.fontawesome.com/6faaeaee2c.js" crossorigin="anonymous"></script>
 {{ partialCached "head/css.html" . }}
 {{ partialCached "head/js.html" . }}

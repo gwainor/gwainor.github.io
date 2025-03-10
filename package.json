@@ -20,8 +20,23 @@
   "devDependencies": {
     "@ianvs/prettier-plugin-sort-imports": "^4.4.1",
     "@tailwindcss/cli": "^4.0.5",
-    "prettier": "^3.5.0",
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
+    "prettier": "^3.5.3",
+    "prettier-plugin-tailwindcss": "^0.6.11",
     "tailwindcss": "^4.0.5",
     "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "@react-spring/three": "^9.7.5",
+    "@react-three/fiber": "^9.0.4",
+    "@types/three": "^0.174.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "motion": "^12.4.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tailwind-merge": "^3.0.2",
+    "three": "^0.174.0"
   }
 }

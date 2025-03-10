@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "lib": ["es5", "DOM", "DOM.Iterable"],
+    "allowJs": true,
+    "jsx": "react-jsx",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strict": true,
+    "baseUrl": "./",
+    "rootDir": ".",
+    "paths": {
+      "@/*": ["assets/js/*"]
+    },
+  },
+  "include": [
+    "assets/js/**/*.ts",
+    "assets/js/**/*.tsx",
+    "assets/js/**/*.test.ts",
+    "assets/js/**/*.test.tsx"
+  ],
+  "exclude": [
+    "node_modules",
+    "public"
+  ]
+}
+
