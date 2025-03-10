@@ -7,7 +7,6 @@
     {{ partial "head.html" . }}
   </head>
   <body class="bg-background text-foreground antialiased">
-    {{- if hugo.IsDevelopment }}
     <div class="flex flex-col min-h-screen">
       <main class="relative flex-1">
         <a href="/" class="absolute top-4 left-8 flex-center z-50 group">
@@ -26,10 +25,5 @@
       {{ partial "footer.html" . }}
       {{- end }}
     </div>
-    {{- else }}
-    <div class="h-screen flex items-center justify-center">
-      <h1 class="text-8xl font-bold">Coming Soon</h1>
-    </div>
-    {{- end }}
   </body>
 </html>
