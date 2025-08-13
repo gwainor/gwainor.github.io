@@ -1,14 +1,18 @@
 {{ define "main" }}
 {{ partial "page-title" "About me" }}
-<div class="container mx-auto mt-4">
+<div class="container mx-auto mt-4 space-y-30">
+  {{ partial "about/info.html" . }}
+  {{ partial "about/abilities.html" . }}
+  {{ partial "about/skills.html" . }}
   <div class="grid grid-cols-2 gap-12">
+    <!--
     <div class="space-y-12">
-      {{ partial "about/info.html" . }}
       {{ partial "about/skills.html" . }}
     </div>
     <div>
       {{ partial "about/experiences.html" . }}
     </div>
+  -->
   </div>
 </div>
 {{ end }}

@@ -14,6 +14,11 @@ title = 'Gokhan Ozturk'
     weight = 20
 
   [[menus.main]]
+    name = 'Work'
+    pageRef = '/work'
+    weight = 20
+
+  [[menus.main]]
     name = 'Projects'
     pageRef = '/projects'
     weight = 20

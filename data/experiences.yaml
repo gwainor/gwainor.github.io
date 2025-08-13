@@ -1,0 +1,83 @@
+work:
+  - title: "Leading Senior Full-Stack Developer"
+    company: "BawsHuman"
+    duration: "2024 — 2025"
+    description: "BawsHuman is a social fitness app startup. My role involved building and maintaining a mobile app with a backend API for the platform. Additionally, I managed a small team of developers."
+    technologies:
+      - "Python"
+      - "Django"
+      - "JavaScript"
+      - "React Native"
+      - "Swift"
+      - "MySQL"
+      - "Agile"
+
+  - title: "Senior Full-Stack Developer"
+    company: "ZippyApp"
+    duration: "2022 - 2025"
+    description: "ZippyApp is a web app for finding jobs and it's been around for more than 13 years.  I have upgraded the Django version from 1.10 to 4.2 which has not been able to done by other developers before me. Fixed many bugs and added some features."
+    technologies:
+      - "Python"
+      - "Django"
+      - "NodeJS"
+      - "TypeScript"
+      - "React"
+      - "MySQL"
+      - "Agile"
+      - "Kanban"
+
+  - title: Senior Frontend Developer
+    company: "KocDigital"
+    duration: "2022 - 2023"
+    description: "KocDigital is a leading digital agency. I worked on various frontend projects, focusing on user experience and performance optimization."
+    technologies:
+      - "TypeScript"
+      - "Vue.js"
+      - "NodeJS"
+
+  - title: Senior Full-Stack Developer
+    company: "GoodPeopleAI"
+    duration: "2021 - 2022"
+    description: "GoodPeopleAI is an AI-driven recruitment platform. I was responsible for developing and maintaining the full-stack application, ensuring seamless integration between the frontend and backend."
+    technologies:
+      - "Python"
+      - "Django"
+      - "React"
+      - "PostgreSQL"
+
+  - title: "IT Technician"
+    company: "OYAK - Oyka"
+    duration: "2014 - 2022"
+    description: "As an IT Technician at OYAK - Oyka, I was responsible for maintaining and troubleshooting IT systems, providing technical support to employees, and ensuring the smooth operation of all IT equipment."
+    technologies:
+      - "C#"
+      - "Python"
+      - "React"
+      - "Oracle DB"
+      - "Windows"
+      - "Networking"
+      - "Server Administration"
+
+  - title: "Frontend Developer"
+    company: "Freelance"
+    duration: "Mar - Jul 2014"
+    description: "As a Freelance Frontend Developer, I worked on various projects, focusing on creating responsive and user-friendly web applications using HTML, CSS, and JavaScript."
+    technologies:
+      - "HTML"
+      - "CSS"
+      - "JavaScript"
+      - "Bootstrap"
+
+  - title: "IT Responsible"
+    company: "Cablex - Tansel"
+    duration: "2011 - 2014"
+    description: "I have been working as an IT responsible at Tansel which is a part of Cablex Group for 3 years. I have built and maintained the IT infrastructure and systems for the company. Also built a few internal apps for the company."
+    technologies:
+      - "Php"
+      - "MySQL"
+      - "HTML"
+      - "CSS"
+      - "JavaScript"
+      - "Windows"
+      - "Networking"
+      - "Server Administration"
